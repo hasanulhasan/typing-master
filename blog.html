@@ -6,9 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Page</title>
+  <style>
+    body {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>Difference between Local and Session storage</h1>
+  <h2>Local Storage</h2>
+  <ol>
+    <li>It never expires on closing tab or browser</li>
+    <li>It takes 5-10Mbs memory</li>
+    <li>It is accessible to all windows.</li>
+  </ol>
+  <h2>Session Storage</h2>
+  <ol>
+    <li>It expires on closing tab</li>
+    <li>It takes 5Mbs memory</li>
+    <li>It is accessible to all tab</li>
+  </ol>
+  <h1>Difference between Local and Global Scope</h1>
+  <p><b>Global scope:</b>Global scope contains all of the things defined outside of all code blocks. A code block simply
+    consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure
+    that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the
+    code.</p>
+  <p><b>Local Scope:</b> Local scope contains things defined inside code blocks. A local variable has local scope. A
+    local variable is only accessible where it’s declared.</p>
+  <h1>How does event loop work</h1>
+  <p>The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single
+    thread, but using a few smart data structures, it gives us the illusion of multi-threading. Let’s take a look at
+    what happens on the back-end.</p>
+  <p>The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function
+    is finished, it is popped from the stack.</p>
+  <p>The event queue is responsible for sending new functions to the stack for processing. It follows the queue data
+    structure to maintain the correct sequence in which all operations should be sent for execution.</p>
+  <h1>How can be made undfined in javascript</h1>
+  <h2>Undefined can be found in many ways, few example are mentioned here</h2>
+  <p>
+    let count;<br>
+    count; // => <b>here it will be undefined</b><br>
+    let person = { name: 'Abul' };<br>
+    person.id; // => <b>here it will be undefined</b><br>
+    let movies = ['Hawa', 'Agun'];<br>
+    movies[3]; // => <b>here it will be undefined</b><br>
+    let testVar = undefined;<br>
+    console.log(testVar); // => <b>here it will be undefined</b><br>
+  </p>
 
 </body>
 
